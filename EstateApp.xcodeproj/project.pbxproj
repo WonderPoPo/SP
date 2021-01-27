@@ -3,19 +3,122 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41F6497535D10E47EC3A5BE2 /* Pods_EstateApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656937EAF8F68336FD30BDEC /* Pods_EstateApp.framework */; };
+		DF74460325AEB1E5000909C8 /* opendata108road.csv in Resources */ = {isa = PBXBuildFile; fileRef = DF74460225AEB1E5000909C8 /* opendata108road.csv */; };
+		DFCAC78225A1CDE000DE7240 /* BoneZoom+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAC77C25A1CDE000DE7240 /* BoneZoom+Extension.swift */; };
+		DFCAC78325A1CDE000DE7240 /* IconBoneZoom.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFCAC77D25A1CDE000DE7240 /* IconBoneZoom.bundle */; };
+		DFCAC78425A1CDE000DE7240 /* BoneZoomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAC77E25A1CDE000DE7240 /* BoneZoomTabbar.swift */; };
+		DFCAC78525A1CDE000DE7240 /* BoneZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAC77F25A1CDE000DE7240 /* BoneZoom.swift */; };
+		DFCAC78625A1CDE000DE7240 /* BoneZoomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAC78025A1CDE000DE7240 /* BoneZoomNav.swift */; };
+		DFCAC78725A1CDE000DE7240 /* BoneZoomDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCAC78125A1CDE000DE7240 /* BoneZoomDelegate.swift */; };
+		F5173CF425653956006FFB1F /* CreatePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5173CF325653956006FFB1F /* CreatePage.storyboard */; };
+		F5173CF625653F3A006FFB1F /* CreateBuildingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5173CF525653F3A006FFB1F /* CreateBuildingListViewController.swift */; };
+		F5173CF8256567EC006FFB1F /* CreateRepairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5173CF7256567EC006FFB1F /* CreateRepairViewController.swift */; };
+		F5173CFA2568C0F7006FFB1F /* LandlordSelRepairerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5173CF92568C0F7006FFB1F /* LandlordSelRepairerViewController.swift */; };
+		F5173CFC25690702006FFB1F /* CreatePropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5173CFB25690702006FFB1F /* CreatePropertyViewController.swift */; };
+		F5173CFE2569090E006FFB1F /* EditUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5173CFD2569090E006FFB1F /* EditUserProfileViewController.swift */; };
+		F5201E2025860AA1005BA08C /* ShowContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5201E1F25860AA1005BA08C /* ShowContractViewController.swift */; };
+		F5267F9625503FBA006F5057 /* QrcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267F9525503FBA006F5057 /* QrcodeScannerViewController.swift */; };
+		F5267F982550405C006F5057 /* QrcodeScanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5267F972550405C006F5057 /* QrcodeScanner.storyboard */; };
+		F5267F9A255052D9006F5057 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267F99255052D9006F5057 /* SettingViewController.swift */; };
+		F5267F9C2550578F006F5057 /* TenantTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267F9B2550578F006F5057 /* TenantTabBarController.swift */; };
+		F5267F9E255057A7006F5057 /* LandlordTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267F9D255057A7006F5057 /* LandlordTabBarController.swift */; };
+		F5267FA025505B85006F5057 /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267F9F25505B85006F5057 /* ConsoleViewController.swift */; };
+		F5267FA3255082D1006F5057 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267FA2255082D1006F5057 /* NewsViewController.swift */; };
+		F5267FA525558B11006F5057 /* CustomerSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267FA425558B11006F5057 /* CustomerSupportViewController.swift */; };
+		F5267FAE255C8671006F5057 /* LandlordMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5267FAC255C8671006F5057 /* LandlordMain.storyboard */; };
+		F5267FB0255D2A42006F5057 /* BuildingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267FAF255D2A42006F5057 /* BuildingListViewController.swift */; };
+		F5267FB2255D2A5C006F5057 /* PropertyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267FB1255D2A5C006F5057 /* PropertyListViewController.swift */; };
+		F5267FB4255D5B33006F5057 /* PropertyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267FB3255D5B33006F5057 /* PropertyDetailViewController.swift */; };
+		F5267FC3255E830B006F5057 /* LandlordContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5267FC2255E830B006F5057 /* LandlordContractViewController.swift */; };
 		F5360EA225382B0800BD6B6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EA125382B0800BD6B6E /* AppDelegate.swift */; };
 		F5360EA425382B0800BD6B6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EA325382B0800BD6B6E /* SceneDelegate.swift */; };
 		F5360EA625382B0800BD6B6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EA525382B0800BD6B6E /* ViewController.swift */; };
 		F5360EA925382B0800BD6B6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5360EA725382B0800BD6B6E /* Main.storyboard */; };
 		F5360EAB25382B0D00BD6B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5360EAA25382B0D00BD6B6E /* Assets.xcassets */; };
 		F5360EAE25382B0D00BD6B6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5360EAC25382B0D00BD6B6E /* LaunchScreen.storyboard */; };
+		F5360EB625383B2200BD6B6E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EB525383B2200BD6B6E /* Global.swift */; };
+		F5360EC0254580A200BD6B6E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EBF254580A200BD6B6E /* MainPageViewController.swift */; };
+		F5360EC225458E3200BD6B6E /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EC125458E3200BD6B6E /* EquipmentViewController.swift */; };
+		F5360EC42545979100BD6B6E /* Present_IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EC32545979100BD6B6E /* Present_IntroViewController.swift */; };
+		F5360EC625459B2600BD6B6E /* HouseRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EC525459B2600BD6B6E /* HouseRuleViewController.swift */; };
+		F5360EC825459B3B00BD6B6E /* HouseViewPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EC725459B3B00BD6B6E /* HouseViewPointViewController.swift */; };
+		F5360ECA2545A20D00BD6B6E /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360EC92545A20D00BD6B6E /* PaymentViewController.swift */; };
+		F5360ECC2545A21C00BD6B6E /* MaintainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5360ECB2545A21C00BD6B6E /* MaintainViewController.swift */; };
+		F55250642578C92200C0E114 /* SelPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55250632578C92200C0E114 /* SelPropertyViewController.swift */; };
+		F5525066257D57E100C0E114 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5525065257D57E100C0E114 /* ForgetPasswordViewController.swift */; };
+		F5525068257DF4DB00C0E114 /* FirstTutorialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5525067257DF4DB00C0E114 /* FirstTutorialsViewController.swift */; };
+		F552506A257DFFAC00C0E114 /* ContantUsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5525069257DFFAC00C0E114 /* ContantUsWebViewController.swift */; };
+		F552506C257E044700C0E114 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F552506B257E044600C0E114 /* WebKit.framework */; };
+		F552506E257E3C6900C0E114 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552506D257E3C6900C0E114 /* FinanceViewController.swift */; };
+		F5525070257E4DA700C0E114 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552506F257E4DA700C0E114 /* UserProfileViewController.swift */; };
+		F5525072257E70B800C0E114 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5525071257E70B800C0E114 /* ShowImageViewController.swift */; };
+		F55250752581FA0C00C0E114 /* EstateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F55250732581FA0C00C0E114 /* EstateModel.xcdatamodeld */; };
+		F552507F2581FFF900C0E114 /* ImageRecord+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552507D2581FFF900C0E114 /* ImageRecord+CoreDataClass.swift */; };
+		F55250802581FFF900C0E114 /* ImageRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552507E2581FFF900C0E114 /* ImageRecord+CoreDataProperties.swift */; };
+		F55250902584E1EF00C0E114 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F552508F2584E1EF00C0E114 /* LoadingViewController.swift */; };
+		F55DF5C5258DC1FA00365D82 /* CreateEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5C4258DC1FA00365D82 /* CreateEquipmentViewController.swift */; };
+		F55DF5C72592326700365D82 /* CreateHouseRuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5C62592326700365D82 /* CreateHouseRuleViewController.swift */; };
+		F55DF5C92592629500365D82 /* CreateContractInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5C82592629500365D82 /* CreateContractInfoViewController.swift */; };
+		F55DF5CB259B10D300365D82 /* CreateContractImgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5CA259B10D300365D82 /* CreateContractImgViewController.swift */; };
+		F55DF5CD259B14A400365D82 /* CreateContractUpLoadImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5CC259B14A400365D82 /* CreateContractUpLoadImg.swift */; };
+		F55DF5CF259B14B800365D82 /* CreateContractUpLoadPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5CE259B14B800365D82 /* CreateContractUpLoadPDF.swift */; };
+		F55DF5D1259B14D700365D82 /* CreateContractUpLoadTemple.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55DF5D0259B14D700365D82 /* CreateContractUpLoadTemple.swift */; };
+		F56B4F62255F16150000CD12 /* SelTenantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F61255F16150000CD12 /* SelTenantViewController.swift */; };
+		F56B4F64255FA7510000CD12 /* LandlordRepairListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F63255FA7510000CD12 /* LandlordRepairListViewController.swift */; };
+		F56B4F66255FAC230000CD12 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F65255FAC230000CD12 /* StaffViewController.swift */; };
+		F56B4F68255FEB730000CD12 /* LandlordAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F67255FEB730000CD12 /* LandlordAnalysisViewController.swift */; };
+		F56B4F6A25609FDE0000CD12 /* TenantChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F6925609FDE0000CD12 /* TenantChatViewController.swift */; };
+		F56B4F6C2560A2770000CD12 /* LandlordChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F6B2560A2770000CD12 /* LandlordChatViewController.swift */; };
+		F56B4F6E2562DB510000CD12 /* LandloadNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F6D2562DB510000CD12 /* LandloadNewsViewController.swift */; };
+		F56B4F702562DD970000CD12 /* RepairDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F6F2562DD970000CD12 /* RepairDetailViewController.swift */; };
+		F56B4F722562E7AA0000CD12 /* LandlordChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B4F712562E7AA0000CD12 /* LandlordChatListViewController.swift */; };
+		F58ADE36254AAD890001553E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58ADE35254AAD890001553E /* LoginViewController.swift */; };
+		F58ADE38254AD2EE0001553E /* ContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58ADE37254AD2EE0001553E /* ContractViewController.swift */; };
+		F58ADE3A254AD56C0001553E /* PresentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58ADE39254AD56C0001553E /* PresentViewController.storyboard */; };
+		F58ADE3C254AD5AB0001553E /* ContractContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58ADE3B254AD5AB0001553E /* ContractContainView.swift */; };
+		F58ADE3E254AD5C80001553E /* CertificateContainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58ADE3D254AD5C80001553E /* CertificateContainView.swift */; };
+		F58ADE41254AD6140001553E /* SignDrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58ADE40254AD6140001553E /* SignDrawViewController.swift */; };
+		F5E48D58256B9F1B0045D34B /* LandlordMainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E48D57256B9F1B0045D34B /* LandlordMainPageViewController.swift */; };
+		F5E48D5A256BDDDC0045D34B /* CreateStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E48D59256BDDDC0045D34B /* CreateStaffViewController.swift */; };
+		F5E48D5C256C88D80045D34B /* RepairerReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E48D5B256C88D80045D34B /* RepairerReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0911B5D5473F1DB99411291E /* Pods-EstateApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EstateApp.release.xcconfig"; path = "Target Support Files/Pods-EstateApp/Pods-EstateApp.release.xcconfig"; sourceTree = "<group>"; };
+		656937EAF8F68336FD30BDEC /* Pods_EstateApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EstateApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891B38CFE452DB3EE8DDE3D7 /* Pods-EstateApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EstateApp.debug.xcconfig"; path = "Target Support Files/Pods-EstateApp/Pods-EstateApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DF74460225AEB1E5000909C8 /* opendata108road.csv */ = {isa = PBXFileReference; lastKnownFileType = file; path = opendata108road.csv; sourceTree = SOURCE_ROOT; };
+		DFCAC77C25A1CDE000DE7240 /* BoneZoom+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BoneZoom+Extension.swift"; sourceTree = "<group>"; };
+		DFCAC77D25A1CDE000DE7240 /* IconBoneZoom.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IconBoneZoom.bundle; sourceTree = "<group>"; };
+		DFCAC77E25A1CDE000DE7240 /* BoneZoomTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneZoomTabbar.swift; sourceTree = "<group>"; };
+		DFCAC77F25A1CDE000DE7240 /* BoneZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneZoom.swift; sourceTree = "<group>"; };
+		DFCAC78025A1CDE000DE7240 /* BoneZoomNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneZoomNav.swift; sourceTree = "<group>"; };
+		DFCAC78125A1CDE000DE7240 /* BoneZoomDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneZoomDelegate.swift; sourceTree = "<group>"; };
+		F5173CF325653956006FFB1F /* CreatePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatePage.storyboard; sourceTree = "<group>"; };
+		F5173CF525653F3A006FFB1F /* CreateBuildingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBuildingListViewController.swift; sourceTree = "<group>"; };
+		F5173CF7256567EC006FFB1F /* CreateRepairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRepairViewController.swift; sourceTree = "<group>"; };
+		F5173CF92568C0F7006FFB1F /* LandlordSelRepairerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordSelRepairerViewController.swift; sourceTree = "<group>"; };
+		F5173CFB25690702006FFB1F /* CreatePropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePropertyViewController.swift; sourceTree = "<group>"; };
+		F5173CFD2569090E006FFB1F /* EditUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserProfileViewController.swift; sourceTree = "<group>"; };
+		F5201E1F25860AA1005BA08C /* ShowContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowContractViewController.swift; sourceTree = "<group>"; };
+		F5267F9525503FBA006F5057 /* QrcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeScannerViewController.swift; sourceTree = "<group>"; };
+		F5267F972550405C006F5057 /* QrcodeScanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrcodeScanner.storyboard; sourceTree = "<group>"; };
+		F5267F99255052D9006F5057 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		F5267F9B2550578F006F5057 /* TenantTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantTabBarController.swift; sourceTree = "<group>"; };
+		F5267F9D255057A7006F5057 /* LandlordTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordTabBarController.swift; sourceTree = "<group>"; };
+		F5267F9F25505B85006F5057 /* ConsoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
+		F5267FA2255082D1006F5057 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F5267FA425558B11006F5057 /* CustomerSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupportViewController.swift; sourceTree = "<group>"; };
+		F5267FAD255C8671006F5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = EstateApp/Base.lproj/LandlordMain.storyboard; sourceTree = "<group>"; };
+		F5267FAF255D2A42006F5057 /* BuildingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListViewController.swift; sourceTree = "<group>"; };
+		F5267FB1255D2A5C006F5057 /* PropertyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListViewController.swift; sourceTree = "<group>"; };
+		F5267FB3255D5B33006F5057 /* PropertyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewController.swift; sourceTree = "<group>"; };
+		F5267FC2255E830B006F5057 /* LandlordContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordContractViewController.swift; sourceTree = "<group>"; };
 		F5360E9E25382B0800BD6B6E /* EstateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EstateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5360EA125382B0800BD6B6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5360EA325382B0800BD6B6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +127,52 @@
 		F5360EAA25382B0D00BD6B6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5360EAD25382B0D00BD6B6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5360EAF25382B0D00BD6B6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5360EB525383B2200BD6B6E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F5360EBF254580A200BD6B6E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		F5360EC125458E3200BD6B6E /* EquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
+		F5360EC32545979100BD6B6E /* Present_IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present_IntroViewController.swift; sourceTree = "<group>"; };
+		F5360EC525459B2600BD6B6E /* HouseRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRuleViewController.swift; sourceTree = "<group>"; };
+		F5360EC725459B3B00BD6B6E /* HouseViewPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewPointViewController.swift; sourceTree = "<group>"; };
+		F5360EC92545A20D00BD6B6E /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		F5360ECB2545A21C00BD6B6E /* MaintainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintainViewController.swift; sourceTree = "<group>"; };
+		F55250632578C92200C0E114 /* SelPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelPropertyViewController.swift; sourceTree = "<group>"; };
+		F5525065257D57E100C0E114 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		F5525067257DF4DB00C0E114 /* FirstTutorialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialsViewController.swift; sourceTree = "<group>"; };
+		F5525069257DFFAC00C0E114 /* ContantUsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContantUsWebViewController.swift; sourceTree = "<group>"; };
+		F552506B257E044600C0E114 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F552506D257E3C6900C0E114 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
+		F552506F257E4DA700C0E114 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		F5525071257E70B800C0E114 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		F55250742581FA0C00C0E114 /* EstateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EstateModel.xcdatamodel; sourceTree = "<group>"; };
+		F552507D2581FFF900C0E114 /* ImageRecord+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageRecord+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		F552507E2581FFF900C0E114 /* ImageRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageRecord+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		F552508F2584E1EF00C0E114 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		F55DF5C4258DC1FA00365D82 /* CreateEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEquipmentViewController.swift; sourceTree = "<group>"; };
+		F55DF5C62592326700365D82 /* CreateHouseRuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHouseRuleViewController.swift; sourceTree = "<group>"; };
+		F55DF5C82592629500365D82 /* CreateContractInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractInfoViewController.swift; sourceTree = "<group>"; };
+		F55DF5CA259B10D300365D82 /* CreateContractImgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractImgViewController.swift; sourceTree = "<group>"; };
+		F55DF5CC259B14A400365D82 /* CreateContractUpLoadImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractUpLoadImg.swift; sourceTree = "<group>"; };
+		F55DF5CE259B14B800365D82 /* CreateContractUpLoadPDF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractUpLoadPDF.swift; sourceTree = "<group>"; };
+		F55DF5D0259B14D700365D82 /* CreateContractUpLoadTemple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateContractUpLoadTemple.swift; sourceTree = "<group>"; };
+		F56B4F61255F16150000CD12 /* SelTenantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelTenantViewController.swift; sourceTree = "<group>"; };
+		F56B4F63255FA7510000CD12 /* LandlordRepairListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordRepairListViewController.swift; sourceTree = "<group>"; };
+		F56B4F65255FAC230000CD12 /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
+		F56B4F67255FEB730000CD12 /* LandlordAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordAnalysisViewController.swift; sourceTree = "<group>"; };
+		F56B4F6925609FDE0000CD12 /* TenantChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenantChatViewController.swift; sourceTree = "<group>"; };
+		F56B4F6B2560A2770000CD12 /* LandlordChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordChatViewController.swift; sourceTree = "<group>"; };
+		F56B4F6D2562DB510000CD12 /* LandloadNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandloadNewsViewController.swift; sourceTree = "<group>"; };
+		F56B4F6F2562DD970000CD12 /* RepairDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairDetailViewController.swift; sourceTree = "<group>"; };
+		F56B4F712562E7AA0000CD12 /* LandlordChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordChatListViewController.swift; sourceTree = "<group>"; };
+		F58ADE35254AAD890001553E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F58ADE37254AD2EE0001553E /* ContractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractViewController.swift; sourceTree = "<group>"; };
+		F58ADE39254AD56C0001553E /* PresentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PresentViewController.storyboard; sourceTree = "<group>"; };
+		F58ADE3B254AD5AB0001553E /* ContractContainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractContainView.swift; sourceTree = "<group>"; };
+		F58ADE3D254AD5C80001553E /* CertificateContainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateContainView.swift; sourceTree = "<group>"; };
+		F58ADE40254AD6140001553E /* SignDrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignDrawViewController.swift; sourceTree = "<group>"; };
+		F5A5FD44255E922C00D68F8B /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../Library/Developer/Xcode/DerivedData/EstateApp-dsgixdqjwmcmvkgexqupgmadddtv/Build/Products/Debug-iphoneos/Charts.framework"; sourceTree = "<group>"; };
+		F5E48D57256B9F1B0045D34B /* LandlordMainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandlordMainPageViewController.swift; sourceTree = "<group>"; };
+		F5E48D59256BDDDC0045D34B /* CreateStaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStaffViewController.swift; sourceTree = "<group>"; };
+		F5E48D5B256C88D80045D34B /* RepairerReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairerReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +180,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F552506C257E044700C0E114 /* WebKit.framework in Frameworks */,
+				41F6497535D10E47EC3A5BE2 /* Pods_EstateApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C45E97DEDCCDB567760A2F5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				891B38CFE452DB3EE8DDE3D7 /* Pods-EstateApp.debug.xcconfig */,
+				0911B5D5473F1DB99411291E /* Pods-EstateApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFCAC78925A1CE5700DE7240 /* BoneZoom */ = {
+			isa = PBXGroup;
+			children = (
+				DFCAC77F25A1CDE000DE7240 /* BoneZoom.swift */,
+				DFCAC77C25A1CDE000DE7240 /* BoneZoom+Extension.swift */,
+				DFCAC78125A1CDE000DE7240 /* BoneZoomDelegate.swift */,
+				DFCAC78025A1CDE000DE7240 /* BoneZoomNav.swift */,
+				DFCAC77E25A1CDE000DE7240 /* BoneZoomTabbar.swift */,
+				DFCAC77D25A1CDE000DE7240 /* IconBoneZoom.bundle */,
+			);
+			path = BoneZoom;
+			sourceTree = "<group>";
+		};
+		F5267FA125505B8B006F5057 /* Landlord */ = {
+			isa = PBXGroup;
+			children = (
+				F5267F9D255057A7006F5057 /* LandlordTabBarController.swift */,
+				F5E48D57256B9F1B0045D34B /* LandlordMainPageViewController.swift */,
+				F5267F9F25505B85006F5057 /* ConsoleViewController.swift */,
+				F5267FAF255D2A42006F5057 /* BuildingListViewController.swift */,
+				F5267FB1255D2A5C006F5057 /* PropertyListViewController.swift */,
+				F5267FB3255D5B33006F5057 /* PropertyDetailViewController.swift */,
+				F5201E1F25860AA1005BA08C /* ShowContractViewController.swift */,
+				F552506D257E3C6900C0E114 /* FinanceViewController.swift */,
+				F5267FC2255E830B006F5057 /* LandlordContractViewController.swift */,
+				F56B4F63255FA7510000CD12 /* LandlordRepairListViewController.swift */,
+				F56B4F6F2562DD970000CD12 /* RepairDetailViewController.swift */,
+				F5173CF92568C0F7006FFB1F /* LandlordSelRepairerViewController.swift */,
+				F56B4F61255F16150000CD12 /* SelTenantViewController.swift */,
+				F56B4F65255FAC230000CD12 /* StaffViewController.swift */,
+				F56B4F67255FEB730000CD12 /* LandlordAnalysisViewController.swift */,
+				F56B4F712562E7AA0000CD12 /* LandlordChatListViewController.swift */,
+				F56B4F6B2560A2770000CD12 /* LandlordChatViewController.swift */,
+			);
+			path = Landlord;
+			sourceTree = "<group>";
+		};
+		F5267FBE255E823E006F5057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F552506B257E044600C0E114 /* WebKit.framework */,
+				F5A5FD44255E922C00D68F8B /* Charts.framework */,
+				656937EAF8F68336FD30BDEC /* Pods_EstateApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5360E9525382B0800BD6B6E = {
 			isa = PBXGroup;
 			children = (
 				F5360EA025382B0800BD6B6E /* EstateApp */,
 				F5360E9F25382B0800BD6B6E /* Products */,
+				F5267FBE255E823E006F5057 /* Frameworks */,
+				C45E97DEDCCDB567760A2F5F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +265,89 @@
 		F5360EA025382B0800BD6B6E /* EstateApp */ = {
 			isa = PBXGroup;
 			children = (
+				DF74460225AEB1E5000909C8 /* opendata108road.csv */,
 				F5360EA125382B0800BD6B6E /* AppDelegate.swift */,
 				F5360EA325382B0800BD6B6E /* SceneDelegate.swift */,
+				F552507A2581FC4E00C0E114 /* CoreData */,
+				F5360EB525383B2200BD6B6E /* Global.swift */,
+				DFCAC78925A1CE5700DE7240 /* BoneZoom */,
+				F5267F9525503FBA006F5057 /* QrcodeScannerViewController.swift */,
+				F5267F972550405C006F5057 /* QrcodeScanner.storyboard */,
+				F5525069257DFFAC00C0E114 /* ContantUsWebViewController.swift */,
+				F58ADE35254AAD890001553E /* LoginViewController.swift */,
+				F5525067257DF4DB00C0E114 /* FirstTutorialsViewController.swift */,
+				F5525065257D57E100C0E114 /* ForgetPasswordViewController.swift */,
+				F5267FA125505B8B006F5057 /* Landlord */,
+				F5267F9B2550578F006F5057 /* TenantTabBarController.swift */,
+				F56B4F6D2562DB510000CD12 /* LandloadNewsViewController.swift */,
+				F5267FA2255082D1006F5057 /* NewsViewController.swift */,
 				F5360EA525382B0800BD6B6E /* ViewController.swift */,
+				F5267F99255052D9006F5057 /* SettingViewController.swift */,
+				F5360EBF254580A200BD6B6E /* MainPageViewController.swift */,
+				F5360EC125458E3200BD6B6E /* EquipmentViewController.swift */,
+				F5360EC32545979100BD6B6E /* Present_IntroViewController.swift */,
+				F5360EC525459B2600BD6B6E /* HouseRuleViewController.swift */,
+				F5360EC725459B3B00BD6B6E /* HouseViewPointViewController.swift */,
+				F5360EC92545A20D00BD6B6E /* PaymentViewController.swift */,
+				F5360ECB2545A21C00BD6B6E /* MaintainViewController.swift */,
+				F5267FA425558B11006F5057 /* CustomerSupportViewController.swift */,
+				F56B4F6925609FDE0000CD12 /* TenantChatViewController.swift */,
+				F5173CFD2569090E006FFB1F /* EditUserProfileViewController.swift */,
+				F552506F257E4DA700C0E114 /* UserProfileViewController.swift */,
+				F58ADE3F254AD5D60001553E /* Contract */,
 				F5360EA725382B0800BD6B6E /* Main.storyboard */,
+				F5267FAC255C8671006F5057 /* LandlordMain.storyboard */,
+				F5E48D5B256C88D80045D34B /* RepairerReportViewController.swift */,
+				F58ADE39254AD56C0001553E /* PresentViewController.storyboard */,
+				F5525071257E70B800C0E114 /* ShowImageViewController.swift */,
+				F55250632578C92200C0E114 /* SelPropertyViewController.swift */,
+				F5173CF325653956006FFB1F /* CreatePage.storyboard */,
+				F55DF5D2259B14E600365D82 /* CreateContractImg */,
+				F55DF5C82592629500365D82 /* CreateContractInfoViewController.swift */,
+				F55DF5C62592326700365D82 /* CreateHouseRuleViewController.swift */,
+				F55DF5C4258DC1FA00365D82 /* CreateEquipmentViewController.swift */,
+				F5E48D59256BDDDC0045D34B /* CreateStaffViewController.swift */,
+				F5173CF525653F3A006FFB1F /* CreateBuildingListViewController.swift */,
+				F5173CFB25690702006FFB1F /* CreatePropertyViewController.swift */,
+				F5173CF7256567EC006FFB1F /* CreateRepairViewController.swift */,
+				F58ADE40254AD6140001553E /* SignDrawViewController.swift */,
+				F552508F2584E1EF00C0E114 /* LoadingViewController.swift */,
 				F5360EAA25382B0D00BD6B6E /* Assets.xcassets */,
-				F5360EAC25382B0D00BD6B6E /* LaunchScreen.storyboard */,
 				F5360EAF25382B0D00BD6B6E /* Info.plist */,
+				F5360EAC25382B0D00BD6B6E /* LaunchScreen.storyboard */,
 			);
 			path = EstateApp;
+			sourceTree = "<group>";
+		};
+		F552507A2581FC4E00C0E114 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F552507D2581FFF900C0E114 /* ImageRecord+CoreDataClass.swift */,
+				F552507E2581FFF900C0E114 /* ImageRecord+CoreDataProperties.swift */,
+				F55250732581FA0C00C0E114 /* EstateModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F55DF5D2259B14E600365D82 /* CreateContractImg */ = {
+			isa = PBXGroup;
+			children = (
+				F55DF5CA259B10D300365D82 /* CreateContractImgViewController.swift */,
+				F55DF5CC259B14A400365D82 /* CreateContractUpLoadImg.swift */,
+				F55DF5CE259B14B800365D82 /* CreateContractUpLoadPDF.swift */,
+				F55DF5D0259B14D700365D82 /* CreateContractUpLoadTemple.swift */,
+			);
+			path = CreateContractImg;
+			sourceTree = "<group>";
+		};
+		F58ADE3F254AD5D60001553E /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				F58ADE37254AD2EE0001553E /* ContractViewController.swift */,
+				F58ADE3B254AD5AB0001553E /* ContractContainView.swift */,
+				F58ADE3D254AD5C80001553E /* CertificateContainView.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5360EB225382B0D00BD6B6E /* Build configuration list for PBXNativeTarget "EstateApp" */;
 			buildPhases = (
+				4F1F01A2A9339A8B6EABA027 /* [CP] Check Pods Manifest.lock */,
 				F5360E9A25382B0800BD6B6E /* Sources */,
 				F5360E9B25382B0800BD6B6E /* Frameworks */,
 				F5360E9C25382B0800BD6B6E /* Resources */,
+				84F00B6137A7F888B6F3BA37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,27 +411,148 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5360EAE25382B0D00BD6B6E /* LaunchScreen.storyboard in Resources */,
+				DF74460325AEB1E5000909C8 /* opendata108road.csv in Resources */,
+				F5267FAE255C8671006F5057 /* LandlordMain.storyboard in Resources */,
 				F5360EAB25382B0D00BD6B6E /* Assets.xcassets in Resources */,
+				F58ADE3A254AD56C0001553E /* PresentViewController.storyboard in Resources */,
+				F5267F982550405C006F5057 /* QrcodeScanner.storyboard in Resources */,
+				DFCAC78325A1CDE000DE7240 /* IconBoneZoom.bundle in Resources */,
+				F5173CF425653956006FFB1F /* CreatePage.storyboard in Resources */,
 				F5360EA925382B0800BD6B6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F1F01A2A9339A8B6EABA027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EstateApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84F00B6137A7F888B6F3BA37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EstateApp/Pods-EstateApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EstateApp/Pods-EstateApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EstateApp/Pods-EstateApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5360E9A25382B0800BD6B6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5267FB0255D2A42006F5057 /* BuildingListViewController.swift in Sources */,
+				F5525070257E4DA700C0E114 /* UserProfileViewController.swift in Sources */,
+				F58ADE3E254AD5C80001553E /* CertificateContainView.swift in Sources */,
+				F5E48D58256B9F1B0045D34B /* LandlordMainPageViewController.swift in Sources */,
+				DFCAC78225A1CDE000DE7240 /* BoneZoom+Extension.swift in Sources */,
+				F56B4F6A25609FDE0000CD12 /* TenantChatViewController.swift in Sources */,
+				F58ADE36254AAD890001553E /* LoginViewController.swift in Sources */,
+				F552507F2581FFF900C0E114 /* ImageRecord+CoreDataClass.swift in Sources */,
+				F55DF5CD259B14A400365D82 /* CreateContractUpLoadImg.swift in Sources */,
+				F5360EC0254580A200BD6B6E /* MainPageViewController.swift in Sources */,
+				F5360EB625383B2200BD6B6E /* Global.swift in Sources */,
+				F56B4F6E2562DB510000CD12 /* LandloadNewsViewController.swift in Sources */,
+				F5267FB2255D2A5C006F5057 /* PropertyListViewController.swift in Sources */,
+				F55DF5CF259B14B800365D82 /* CreateContractUpLoadPDF.swift in Sources */,
+				F56B4F64255FA7510000CD12 /* LandlordRepairListViewController.swift in Sources */,
+				F5173CFC25690702006FFB1F /* CreatePropertyViewController.swift in Sources */,
+				F5267FB4255D5B33006F5057 /* PropertyDetailViewController.swift in Sources */,
+				F5173CF625653F3A006FFB1F /* CreateBuildingListViewController.swift in Sources */,
+				F5360EC42545979100BD6B6E /* Present_IntroViewController.swift in Sources */,
+				F552506A257DFFAC00C0E114 /* ContantUsWebViewController.swift in Sources */,
+				F5173CFE2569090E006FFB1F /* EditUserProfileViewController.swift in Sources */,
+				DFCAC78425A1CDE000DE7240 /* BoneZoomTabbar.swift in Sources */,
+				F5267F9A255052D9006F5057 /* SettingViewController.swift in Sources */,
+				F5267FC3255E830B006F5057 /* LandlordContractViewController.swift in Sources */,
+				F56B4F702562DD970000CD12 /* RepairDetailViewController.swift in Sources */,
+				F5525068257DF4DB00C0E114 /* FirstTutorialsViewController.swift in Sources */,
+				F5267F9625503FBA006F5057 /* QrcodeScannerViewController.swift in Sources */,
+				F55250642578C92200C0E114 /* SelPropertyViewController.swift in Sources */,
+				F5267FA525558B11006F5057 /* CustomerSupportViewController.swift in Sources */,
+				F58ADE41254AD6140001553E /* SignDrawViewController.swift in Sources */,
+				F5360EC625459B2600BD6B6E /* HouseRuleViewController.swift in Sources */,
+				F5E48D5C256C88D80045D34B /* RepairerReportViewController.swift in Sources */,
+				F56B4F722562E7AA0000CD12 /* LandlordChatListViewController.swift in Sources */,
+				F55DF5C92592629500365D82 /* CreateContractInfoViewController.swift in Sources */,
+				F58ADE38254AD2EE0001553E /* ContractViewController.swift in Sources */,
+				F56B4F6C2560A2770000CD12 /* LandlordChatViewController.swift in Sources */,
+				F5173CF8256567EC006FFB1F /* CreateRepairViewController.swift in Sources */,
 				F5360EA625382B0800BD6B6E /* ViewController.swift in Sources */,
+				F5267F9C2550578F006F5057 /* TenantTabBarController.swift in Sources */,
 				F5360EA225382B0800BD6B6E /* AppDelegate.swift in Sources */,
+				F5267F9E255057A7006F5057 /* LandlordTabBarController.swift in Sources */,
+				DFCAC78725A1CDE000DE7240 /* BoneZoomDelegate.swift in Sources */,
+				F55DF5CB259B10D300365D82 /* CreateContractImgViewController.swift in Sources */,
+				F55250802581FFF900C0E114 /* ImageRecord+CoreDataProperties.swift in Sources */,
+				F55250752581FA0C00C0E114 /* EstateModel.xcdatamodeld in Sources */,
 				F5360EA425382B0800BD6B6E /* SceneDelegate.swift in Sources */,
+				F5267FA3255082D1006F5057 /* NewsViewController.swift in Sources */,
+				DFCAC78625A1CDE000DE7240 /* BoneZoomNav.swift in Sources */,
+				F56B4F62255F16150000CD12 /* SelTenantViewController.swift in Sources */,
+				F5E48D5A256BDDDC0045D34B /* CreateStaffViewController.swift in Sources */,
+				F58ADE3C254AD5AB0001553E /* ContractContainView.swift in Sources */,
+				F5201E2025860AA1005BA08C /* ShowContractViewController.swift in Sources */,
+				F55250902584E1EF00C0E114 /* LoadingViewController.swift in Sources */,
+				F5360ECA2545A20D00BD6B6E /* PaymentViewController.swift in Sources */,
+				F55DF5C72592326700365D82 /* CreateHouseRuleViewController.swift in Sources */,
+				F5525066257D57E100C0E114 /* ForgetPasswordViewController.swift in Sources */,
+				DFCAC78525A1CDE000DE7240 /* BoneZoom.swift in Sources */,
+				F56B4F66255FAC230000CD12 /* StaffViewController.swift in Sources */,
+				F5360ECC2545A21C00BD6B6E /* MaintainViewController.swift in Sources */,
+				F55DF5D1259B14D700365D82 /* CreateContractUpLoadTemple.swift in Sources */,
+				F5173CFA2568C0F7006FFB1F /* LandlordSelRepairerViewController.swift in Sources */,
+				F56B4F68255FEB730000CD12 /* LandlordAnalysisViewController.swift in Sources */,
+				F5267FA025505B85006F5057 /* ConsoleViewController.swift in Sources */,
+				F5360EC825459B3B00BD6B6E /* HouseViewPointViewController.swift in Sources */,
+				F552506E257E3C6900C0E114 /* FinanceViewController.swift in Sources */,
+				F5525072257E70B800C0E114 /* ShowImageViewController.swift in Sources */,
+				F5360EC225458E3200BD6B6E /* EquipmentViewController.swift in Sources */,
+				F55DF5C5258DC1FA00365D82 /* CreateEquipmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F5267FAC255C8671006F5057 /* LandlordMain.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5267FAD255C8671006F5057 /* Base */,
+			);
+			name = LandlordMain.storyboard;
+			sourceTree = "<group>";
+		};
 		F5360EA725382B0800BD6B6E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,11 +688,13 @@
 		};
 		F5360EB325382B0D00BD6B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891B38CFE452DB3EE8DDE3D7 /* Pods-EstateApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 982B83RB95;
 				INFOPLIST_FILE = EstateApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +702,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChunPo-Chan.EstateApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F5360EB425382B0D00BD6B6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0911B5D5473F1DB99411291E /* Pods-EstateApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 982B83RB95;
 				INFOPLIST_FILE = EstateApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +722,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ChunPo-Chan.EstateApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -338,6 +748,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F55250732581FA0C00C0E114 /* EstateModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F55250742581FA0C00C0E114 /* EstateModel.xcdatamodel */,
+			);
+			currentVersion = F55250742581FA0C00C0E114 /* EstateModel.xcdatamodel */;
+			path = EstateModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F5360E9625382B0800BD6B6E /* Project object */;
 }
